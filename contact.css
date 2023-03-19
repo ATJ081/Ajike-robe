@@ -1,0 +1,33 @@
+.head{
+    
+    display: flex;
+    background-color:rgb(168, 79, 94);
+    color: rgb(58, 55, 55);
+    gap: 40px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.logo img{
+    
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+   }
+ .divli{
+    display: flex;
+    align-content: center;
+    gap: 15px;
+    margin: 20px;
+    }
+    .divli :nth-child(4){
+        border-bottom: 2px solid rgb(3, 3, 3);
+    }
+.list{
+    margin-top: 5px;
+    margin-left: 200px;
+    list-style-type: none;
+}
+.list:hover{
+    color: black;
+    cursor: pointer;
+}
