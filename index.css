@@ -9,7 +9,9 @@ a{
     gap: 40px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    align-items: center;
 }
+
 .logo img{
      margin: 10px;
     width: 40px;
@@ -17,7 +19,7 @@ a{
    }
  .divli{
     display: flex;
-    align-content: center;
+    justify-content: center;
     gap: 15px;
     margin: 20px;
     }
@@ -31,6 +33,11 @@ a{
     color: black;
     text-decoration:none; 
     cursor: pointer;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
 }
  a {
     color:  rgb(58, 55, 55);
@@ -111,7 +118,7 @@ a{
 .placecards {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     font-size: larger;
     text-align: center;
     gap: 10px;
@@ -122,4 +129,85 @@ a{
 .placecards img{
     height: 300px;
     width: 300px;
+}
+.fa-bars{
+    display: none;
+   
+}
+
+@media (max-width:760px) {
+    .divli{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+         color: rgb(58, 55, 55) ;
+         font-size: 30px !important;
+         padding: 15px;
+        
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+    }
+    .int{
+        gap: 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }  
+    .intro{
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        width: 323px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .intro1{
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        width: 323px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+
+
+    }
+    .butto{
+        font-size: 20px;
+        background-color:rgb(168, 79, 94) ;
+        margin-top: 5px;
+        color:whitesmoke ;
+        font-weight: 600;
+        border: none;
+        display: flex;
+        padding: 7px 160px;
+        border-radius: 40px;
+    }  
+    .placecards{
+        /* margin-top: 20px; */
+         display: flex;
+         flex-direction: column;
+        font-size: larger;
+        /* text-align: center; */
+        gap: 10px;
+        /* margin-bottom: 20px; */
+        
+
+    }
+    .placecards :nth-child(1){
+        display: block;
+    }
 }

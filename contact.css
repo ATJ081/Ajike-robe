@@ -31,3 +31,52 @@
     color: black;
     cursor: pointer;
 }
+.why{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    background-color:rgb(224, 223, 219);
+}
+.fa-whatsapp{
+    color: green;
+    font-size: 30px !important;
+}
+.fa-instagram{
+    color: rgb(252, 5, 46);
+    font-size: 30px !important;
+}
+.fa-facebook{
+    color: blue;
+    font-size: 30px !important;
+}
+.why :nth-child(1){
+    border-right: 2px solid black;
+    padding: 20px 100px 100px 20px ;
+    
+}
+.why :nth-child(2){
+    
+    padding: 20px 100px 100px 20px ;
+    
+}
+.fa-bars{
+    display: none;
+   
+}
+@media (max-width:760px) {
+    .divli{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+         color: rgb(58, 55, 55) ;
+         font-size: 30px !important;
+         padding: 15px;
+        
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

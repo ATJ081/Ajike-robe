@@ -31,3 +31,37 @@
     color: black;
     cursor: pointer;
 }
+.buyit {margin-top: 20px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+font-size: larger;
+text-align: center;
+gap: 10px;
+margin-bottom: 20px;
+
+
+}
+.buyit img{
+height: 300px;
+width: 300px;
+}
+.fa-bars{
+    display: none;
+   
+}
+@media (max-width:760px) {
+    .divli{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+         color: rgb(58, 55, 55) ;
+         font-size: 30px !important;
+         padding: 15px;
+        
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+    }
+}
